@@ -1,0 +1,34 @@
+a{
+  &:hover{
+    text-decoration: none;
+  }
+}
+.btn-custome, .btn-custome-lg{
+  border: 2px solid $blue;
+  background: transparent !important;
+  color: $blue;
+  position: relative;
+  &:before {
+    z-index            : -1;
+    content            : "";
+    position           : absolute;
+    bottom             : 0;
+    left               : 0;
+    width              : 100%;
+    height             : 0px;
+    background         : $blue;
+    -moz-transition    : all 0.2s ease 0s;
+    -webkit-transition : all 0.2s ease 0s;
+    transition         : all 0.2s ease 0s;
+  }
+  &:hover{
+    &:before {
+      height : 100% !important;
+    }
+  }
+}
+.btn-custome-lg{
+  font-size: 16px;
+  padding-left: 50px;
+  padding-right: 50px;
+}

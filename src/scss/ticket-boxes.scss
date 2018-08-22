@@ -1,0 +1,101 @@
+
+.ticket-boxes{
+  .box{
+    border: 1px solid $bor-clr;
+    margin-bottom: 20px;
+    border-radius: 2px;
+    position: relative;
+    &:hover{
+      background: $gray-lightest;
+      @include div-shadow;
+    }
+    a{
+      color: inherit;
+      &:hover{
+        text-decoration: none;
+        h3{
+          color: #ce2211;
+        }
+      }
+    }
+    .ticket-img{
+      position: relative;
+      img{
+        width:100%;
+      }
+      .ticket-price{
+        background: $gray-lightest;
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        padding: 3px 10px;
+        font-size: 10px;
+      }
+    }
+    .ticket-info{
+      padding: 10px 10px 0px;
+      font-size: 12px;
+      .time-info{
+        color: #838383;
+      }
+      h3{
+        margin: 0 0 8px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .dropdown{
+        a{
+
+        }
+      }
+    }
+    .social {
+      padding: 5px 10px;
+      border-top: 1px solid $bor-clr;
+    }
+    .dropdown.visiter-icon.open {
+        width: 92%;
+        .dropdown-toggle{
+          float: right;
+          z-index: 2;
+          position: relative;
+        }
+      }
+    .visiter-icon {
+      position: absolute;
+      top: 170px;
+      right: 5px;
+      .dropdown-toggle {
+        background: $blue;
+        color: $white;
+        width: 30px;
+        height: 30px;
+        display: block;
+        text-align: center;
+        line-height: 30px;
+        border-radius: 50%;
+        &:hover{
+          background: $pink;
+        }
+      }
+      .dropdown-menu{
+        &:before{
+          display: none;
+        }
+        right: 0;
+        top: 0;
+        left: auto;
+        z-index: 1;
+        width: 100%;
+        max-width: 100%;
+        background: $gray-lightest;
+        padding: 10px 25px 10px 10px;
+        a{
+          padding: 3px;
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

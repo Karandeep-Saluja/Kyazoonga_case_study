@@ -1,0 +1,40 @@
+// Colors
+//
+// Grayscale and brand colors for use across Bootstrap.
+
+// Start with assigning color names to specific hex values.
+$white:  #FFFFFF ;
+$black:  #000000 ;
+$blue:   #337ab7 ;
+$pink:   #f4538d;
+$bor-clr: #ccc;
+$gray-lightest:           lighten($gray-base, 97%) !default; // #eee
+
+//Bootstrap variables available
+// $gray-base:              #000 !default;
+// $gray-darker:            lighten($gray-base, 13.5%) !default; // #222
+// $gray-dark:              lighten($gray-base, 20%) !default;   // #333
+// $gray:                   lighten($gray-base, 33.5%) !default; // #555
+// $gray-light:             lighten($gray-base, 46.7%) !default; // #777
+// $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
+//
+// $brand-primary:         darken(#428bca, 6.5%) !default; // #337ab7
+// $brand-success:         #5cb85c !default;
+// $brand-info:            #5bc0de !default;
+// $brand-warning:         #f0ad4e !default;
+// $brand-danger:          #d9534f !default;
+
+/* Background colors */
+.bg-gray-darker { background-color: $gray-darker }
+.bg-gray-dark { background-color: $gray-dark }
+.bg-gray { background-color: $gray }
+.bg-gray-light { background-color: $gray-light }
+.bg-gray-lighter { background-color: $gray-lighter }
+.bg-gray-lightest { background-color: $gray-lightest }
+
+.bg-white{ background-color:  $white; }
+.bg-gray-lighter{ background-color:  $gray-lighter; }
+.bg-success{ background-color: $brand-success; }
+.bg-info{ background-color: $brand-info; }
+.bg-warning{ background-color: $brand-warning; }
+.bg-danger{ background-color: $brand-danger; }

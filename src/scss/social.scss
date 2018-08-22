@@ -1,0 +1,24 @@
+
+.social {
+  text-align: right;
+  .btn-circle {
+    @include btn-circle;
+    width: 24px;
+    height: 24px;
+    padding: 6px 0;
+    line-height: 1;
+    &:hover {
+      background: $black;
+      color: $white;
+      border: 0 none;
+    }
+  }
+}
+
+//media queries
+@media only screen and (max-width: 468px) {
+	.social {
+    text-align: left;
+    margin-top: 10px;
+  }
+}
